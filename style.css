@@ -1,0 +1,57 @@
+* {
+    border-radius: 12px;
+}
+body {
+    background-image: linear-gradient(#16384c, rgb(47,50,95), #2f495f);
+    min-height: 800px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    background-color: #ffffff;
+    height: 350px;
+    width: 400px;
+    margin: 200px auto 0 auto;
+    position: relative;
+
+    /* height of section */
+    transition: all 0.5s;
+}
+
+section:hover {
+    height: 400px;
+}
+img {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50px;
+    top: -30px;
+
+    /* time of circle */
+    transition: all 0.5s;
+}
+
+section:hover img {
+    top: -100px;
+    border-radius: 50%;
+    transform: rotate(720deg);
+}
+.container {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    text-align: center;
+
+    /* display: none; */
+    opacity: 0;
+
+    /* apparance of text */
+    transition: all 0.4s;
+}
+section:hover .container {
+    opacity: 1;
+}
+
